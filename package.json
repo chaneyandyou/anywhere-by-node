@@ -24,6 +24,8 @@
   "homepage": "https://github.com/chaneyandyou/anywhere-by-node#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
     "pre-commit": "^1.2.2"
   }
 }
