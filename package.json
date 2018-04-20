@@ -22,9 +22,13 @@
     "url": "https://github.com/chaneyandyou/anywhere-by-node/issues"
   },
   "homepage": "https://github.com/chaneyandyou/anywhere-by-node#readme",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "serve-favicon": "^2.5.0"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
+    "chalk": "^2.3.2",
     "eslint": "^4.19.1",
     "pre-commit": "^1.2.2"
   }

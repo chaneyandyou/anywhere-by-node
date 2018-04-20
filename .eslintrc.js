@@ -4,11 +4,14 @@ module.exports = {
         "commonjs": true,
         "es6": true
     },
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
     "extends": "eslint:recommended",
     "rules": {
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "linebreak-style": [
             "error",
@@ -21,6 +24,7 @@ module.exports = {
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "no-console": 0
     }
 };
