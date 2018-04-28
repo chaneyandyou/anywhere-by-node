@@ -3,7 +3,6 @@ const fs = require('fs')
 const stat = promisify(fs.stat)
 const readdir = promisify(fs.readdir)
 const path = require('path')
-const config = require('../config/defaultConfig')
 const mime = require('../helper/mime')
 const compress = require('../helper/compress')
 const range = require('../helper/range')
@@ -14,7 +13,7 @@ const tplPath = path.join(__dirname, '../template/dir.tpl') // eslint-disable-li
 const source = fs.readFileSync(tplPath)
 const template = Handlebars.compile(source.toString())
 
-module.exports = async function (req, res, filePath) { // eslint-disable-line
+module.exports = async function (req, res, filePath, config) { // eslint-disable-line
   try {
     const stats = await stat(filePath)
     if (stats.isFile()) {
